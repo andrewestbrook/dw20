@@ -13,7 +13,7 @@
 pub fn find_qty(names: &[&str], quantities: &[u32], wanted: &str) -> Option<u32> {
     for i in 0..names.len() {
         if names[i] == wanted {
-            return quantities[i];
+            return Some(quantities[i]);
         }
     }
     None
